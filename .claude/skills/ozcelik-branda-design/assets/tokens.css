@@ -1,0 +1,46 @@
+/*
+ * Özçelik Branda — design tokens
+ * Drop-in for app/globals.css. Paste BEFORE @tailwind directives.
+ *
+ * Palette: "Toprak ve Samimiyet"
+ * Typography: "Güçlü ve Net"
+ */
+
+:root {
+  /* Colors */
+  --color-primary: #8C5A35;       /* toprak kahve */
+  --color-secondary: #D9B382;     /* kum / ten */
+  --color-accent: #4A5D23;        /* zeytin yeşili */
+  --color-bg: #F5F2EB;            /* krem */
+  --color-text: #2C2C2C;          /* antrasit */
+
+  /* Font families — bound by next/font in app/fonts.ts */
+  --font-heading: var(--font-montserrat), system-ui, -apple-system, sans-serif;
+  --font-body: var(--font-open-sans), system-ui, -apple-system, sans-serif;
+  --font-accent: var(--font-oswald), system-ui, -apple-system, sans-serif;
+}
+
+html {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.625;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-text);
+}
+
+::selection {
+  background-color: var(--color-primary);
+  color: var(--color-bg);
+}
