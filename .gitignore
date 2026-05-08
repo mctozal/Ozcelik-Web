@@ -14,7 +14,7 @@
 /coverage
 
 # next.js
-/.next/
+.next/
 /out/
 
 # production
@@ -39,3 +39,10 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# raw asset sources (kept locally for reference, not committed)
+/fotograflar/
+
+# claude worktrees
+/.claude/worktrees/
+
