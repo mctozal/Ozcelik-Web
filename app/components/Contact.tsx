@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const placeQuery = encodeURIComponent(
-  "Özçelik Branda Tekstil Mollahüsrev Cemal Yener Tosyalı Cd 15 Fatih İstanbul",
+  "Molla Hüsrev Mah. Revani Çelebi Sok. No:18/A Fatih İstanbul",
 );
 const mapEmbedSrc = `https://www.google.com/maps?q=${placeQuery}&output=embed`;
 const directionsHref = `https://www.google.com/maps/dir/?api=1&destination=${placeQuery}`;
@@ -9,8 +9,8 @@ const directionsHref = `https://www.google.com/maps/dir/?api=1&destination=${pla
 const contactItems = [
   {
     label: "Telefon",
-    value: "+90 212 511 29 08",
-    href: "tel:+902125112908",
+    value: "+90 212 823 34 67",
+    href: "tel:+902128233467",
   },
   {
     label: "E-posta",
@@ -20,7 +20,7 @@ const contactItems = [
   {
     label: "Adres",
     value:
-      "Mollahüsrev, Cemal Yener Tosyalı Cd. No:15\n34134 Unkapanı – Fatih / İstanbul",
+      "Molla Hüsrev Mah. Revani Çelebi Sok. No:18/A\nFatih / İstanbul",
     href: directionsHref,
   },
 ];
@@ -59,7 +59,7 @@ export function Contact() {
 
             <div className="mt-10 flex flex-wrap gap-4">
               <a
-                href="tel:+902125112908"
+                href="tel:+902128233467"
                 className="inline-flex items-center justify-center rounded-lg bg-primary px-6 py-3 font-[family-name:var(--font-body)] text-sm font-semibold text-bg transition-colors hover:bg-primary/90 md:text-base"
               >
                 Hemen Arayın
